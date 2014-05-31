@@ -15,7 +15,7 @@ var infrared = require('../').use(tessel.port['A']);  // Replace '../' with 'ir-
 // When we're connected
 infrared.on('ready', function() {
 	if (!err) {
-		console.log("Connected to IR!");
+    console.log("Connected to IR!");
 		// Start sending a signal every three seconds
 		setInterval(function() {
 			// Make a buffer of on/off durations (each duration is 16 bits)
